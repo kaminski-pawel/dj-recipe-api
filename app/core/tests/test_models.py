@@ -17,7 +17,6 @@ class ModelTests(TestCase):
         email = 'office@TIPI.SOFTWARE'
         user = get_user_model().objects.create_user(email, 'haslo123')
         self.assertEqual(user.email, email.lower())
-<<<<<<< HEAD
 
     def test_new_user_invalid_email(self):
         with self.assertRaises(ValueError):
@@ -30,5 +29,3 @@ class ModelTests(TestCase):
         )
         self.assertTrue(user.is_superuser)
         self.assertTrue(user.is_staff)
-=======
->>>>>>> 90a9d1e6589fe0e930b9059002cd027dea8aa8ef
